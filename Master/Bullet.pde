@@ -1,6 +1,6 @@
 class Bullet {
   
-  // attributes
+  // variables
   float posX;
   float posY;
   float speedX;

@@ -1,6 +1,6 @@
 abstract class Asteroid {
   
-  // attributes
+  // variables
   float radius;
   float posX;
   float posY;
