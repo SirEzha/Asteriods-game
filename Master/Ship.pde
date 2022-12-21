@@ -56,4 +56,24 @@ class Ship {
   void frame() {
     return;
   }
+  
+  void accelerate() {
+    return; 
+  }
+  
+  void move() {
+    return;
+  }
+  
+  void turn() {
+    return; 
+  }
+  
+  void shoot() {
+    return; 
+  }
+  
+  void collideAsteroid() {
+    return; 
+  }
 }
