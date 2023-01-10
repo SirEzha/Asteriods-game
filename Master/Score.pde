@@ -10,7 +10,7 @@ class Score {
   }
   
   int getScore() {
-    return 0;
+    return score;
   }
   
   void setHighscore(int number) {
@@ -18,7 +18,7 @@ class Score {
   }
   
   int getHighscore() {
-    return 0;
+    return highscore;
   }
   
   // methods

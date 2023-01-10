@@ -12,7 +12,7 @@ class Bullet {
   }
   
   float getPosX() {
-    return 0; 
+    return posX; 
   }
   
   void setPosY(float number) {
@@ -20,7 +20,7 @@ class Bullet {
   }
   
   float getPosY() {
-    return 0; 
+    return posY; 
   }
   
   void setSpeedX(float number) {
@@ -28,7 +28,7 @@ class Bullet {
   }
   
   float getSpeedX() {
-    return 0; 
+    return speedX; 
   }
   
   void setSpeedY(float number) {
@@ -36,7 +36,7 @@ class Bullet {
   }
   
   float getSpeedY() {
-    return 0; 
+    return speedY; 
   }
   
   // methods
