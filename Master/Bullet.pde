@@ -45,7 +45,8 @@ class Bullet {
   }
   
   void move() {
-    return;
+    posX += speedX;
+    posY += speedY;
   }
   
   void disappear() {

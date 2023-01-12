@@ -6,7 +6,7 @@ class Score {
   
   // getters and setters
   void setScore(int number) {
-    return;
+    score = number;
   }
   
   int getScore() {
@@ -14,7 +14,7 @@ class Score {
   }
   
   void setHighscore(int number) {
-    return;
+    highscore = number;
   }
   
   int getHighscore() {
@@ -23,6 +23,6 @@ class Score {
   
   // methods
   void frame() {
-    return 0; 
+    
   }
 }

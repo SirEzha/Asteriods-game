@@ -9,7 +9,7 @@ class AsteroidT3 extends Asteroid {
   
   // getters and setters
   void setPosX(float number) {
-    
+    posX = number;
   }
   
   float getPosX() {
@@ -17,7 +17,7 @@ class AsteroidT3 extends Asteroid {
   }
   
   void setPosY(float number) {
-    
+    posY = number;
   }
   
   float getPosY() {
@@ -25,7 +25,7 @@ class AsteroidT3 extends Asteroid {
   }
   
   void setSpeedX(float number) {
-    
+    speedX = number;
   }
   
   float getSpeedX() {
@@ -33,7 +33,7 @@ class AsteroidT3 extends Asteroid {
   }
   
   void setSpeedY(float number) {
-    
+    speedY = number;
   }
   
   float getSpeedY() {
@@ -65,6 +65,7 @@ class AsteroidT3 extends Asteroid {
     
   }
   
+  // destoys
   void splitOrDestroy() {
     
   }

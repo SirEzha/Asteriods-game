@@ -1,76 +1,122 @@
 class Ship {
   
+  Bullet[] bullets;
+  
   // variables
   int livesAmount;
-  float speedX;
-  float speedY;
-  float accelX;
-  float accelY;
+  float posX = width/2;
+  float posY = height/2;
+  float speedX = 0;
+  float speedY = 0;
+  float accelX = 0;
+  float accelY = 0;
+  float angle = 0;
   
   // constants
-  final float sizeX;
-  final float sizyY;
+  final float sizeX = 10;
+  final float sizyY = 10;
+  final int BULLET_ARRAY_LENTH = 10;
   
-  // getters and setters
-  void setLivesAmount(int number) {
-    return; 
+  Ship() {
+    bullets = new Bullet[BULLET_ARRAY_LENTH]; 
   }
   
-  int getLivesAmount() {
-    return 0;
+  // getters and setters
+  void setPosX(float number) {
+    posX = number; 
+  }
+
+  float getPosX() {
+    return posX; 
+  }
+  
+  void setPosY(float number) {
+    posY = number; 
+  }
+  
+  float getPosY() {
+    return posY; 
   }
   
   void setSpeedX(float number) {
-    return; 
+    speedX = number; 
   }
   
   float getSpeedX() {
-    return 0;
+    return speedX;
   }
   
   void setSpeedY(float number) {
-    return; 
+    speedY = number; 
   }
   
   float getSpeedY() {
-    return 0;
+    return speedY;
   }
 
   void setAccelX(float number) {
-    return; 
+    accelX = number; 
   }
   
   float getAccelX() {
-    return 0;
+    return accelX;
   }
   
   void setAccelY(float number) {
-    return; 
+    accelY = number; 
   }
   
   float getAccelY() {
-    return 0;
+    return accelY;
   }
   
+  void setLivesAmount(int number) {
+    livesAmount = number; 
+  }
+  
+  int getLivesAmount() {
+    return livesAmount;
+  }
+
   // methods
   void frame() {
-    return;
+    rectMode(CENTER);
+    translate(posX, posY);
+    rotate(angle);
+    square(0, 0, sizeX);
   }
   
-  void accelerate() {
-    return; 
+  void accelerate(char direction) {
+    if (direction == 'w') {
+      accelX += 1 * cos(angle);
+      accelY += 1 * sin(angle);
+    }
+    if (direction == 's') {
+      accelX -= 1 * cos(angle);
+      accelY -= 1 * sin(angle);
+    }
   }
   
   void move() {
-    return;
+    speedX += accelX;
+    speedY += accelY;
+    posX += speedX;
+    posY += speedY;
   }
   
-  void turn() {
-    return; 
+  void turn(char direction) {
+    print(direction);
+    if (direction == 'a') {
+      print(angle);
+      angle += 0.2;
+    }
+    if (direction == 'd') {
+      angle -= 0.2; 
+    }
   }
   
   void shoot() {
-    return; 
+    
   }
   
   void collideAsteroid() {

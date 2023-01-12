@@ -3,10 +3,10 @@
   and GameoverScreen base on the current game situation.
 */
 
-GameScreen gameScreen;
-GameoverScreen gameoverScreen;
-
 class GameLogic {
+  
+  GameScreen gameScreen;
+  GameoverScreen gameoverScreen;
   
   GameLogic() {
     gameScreen = new GameScreen();
@@ -14,7 +14,7 @@ class GameLogic {
   }
   
   // variables
-  boolean isGameRunning;
+  boolean isGameRunning = true;
   
   // getters and setters
   void setGameState(boolean newState) {
@@ -27,11 +27,16 @@ class GameLogic {
   
   // methods
   void frame() {
+    checkGameover();
     if (isGameRunning) {
       gameScreen.frame();
     }
     else {
       gameoverScreen.frame(); 
     }
+  }
+  
+  void checkGameover() {
+    isGameRunning = gameScreen.isGameRunning(); 
   }
 }
