@@ -6,6 +6,9 @@ class Bullet {
   float speedX;
   float speedY;
   
+  // constants
+  final float SIZE = 5;
+  
   // getters and setters
   void setPosX(float number) {
     return; 
@@ -41,12 +44,18 @@ class Bullet {
   
   // methods
   void frame() {
-    return; 
+    moveBullet();
+    drawBullet();
   }
   
-  void move() {
+  void moveBullet() {
     posX += speedX;
     posY += speedY;
+  }
+  
+  void drawBullet() {
+    fill(255);
+    square(posX, posY, SIZE); 
   }
   
   void disappear() {
