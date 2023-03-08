@@ -31,4 +31,26 @@ class GameScreen {
     }
     ship.frame();
   }
+  
+    // this method is supposed to check if the bullet has collided with any asteroid or flew out of bounds
+  void checkBullets() {
+    for (int i = 0; i < ship.bullets.size(); i++) {
+      float tempPosX = ship.bullets.get(i).posX;
+      float tempPosY = ship.bullets.get(i).posY;
+      if (tempPosX < 0 || tempPosY < 0) {
+        ship.bullets.remove(i); 
+      }
+      if (tempPosX > width || tempPosY > height) {
+        ship.bullets.remove(i); 
+      }
+      for (int i = 0; i < asteroids.length(); i++) {
+        if  
+      }
+    }
+  }
+  
+  // this method is supposed to check if any two asteroids have collided
+  void checkAsteroids() {
+   
+  }
 }

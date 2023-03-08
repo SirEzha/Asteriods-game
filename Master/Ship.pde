@@ -24,8 +24,11 @@ class Ship {
   final float SIZE_Y = 30;
   final int BULLET_ARRAY_LENTH = 10;
   
+  // lists
+  ArrayList<Bullet> bullets = new ArrayList<Bullet>(); 
+  
   Ship() {
-    LinkedList<Bullet> bullets = new LinkedList<Bullet>(); 
+    
   }
   
   // getters and setters
@@ -120,7 +123,7 @@ class Ship {
   }
   
   void shoot() {
-    
+    bullets.add(new Bullet());
   }
   
   void collideAsteroid() {

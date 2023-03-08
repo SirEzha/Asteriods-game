@@ -6,7 +6,7 @@ class Bullet {
   float speedX;
   float speedY;
   
-  // constants
+  // constants    
   final float SIZE = 5;
   
   // getters and setters
@@ -30,6 +30,7 @@ class Bullet {
     return; 
   }
   
+  // i dont really need this
   float getSpeedX() {
     return speedX; 
   }
@@ -38,6 +39,7 @@ class Bullet {
     return; 
   }
   
+  // i dont really need this
   float getSpeedY() {
     return speedY; 
   }

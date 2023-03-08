@@ -91,7 +91,11 @@ abstract class Asteroid {
   
   abstract void collideAsteroid();
   
-  abstract void collideBullet();
+  /* This seems redundant
+  void collideBullet() {
+    splitOrDestroy(); 
+  }
+  */
   
   abstract void splitOrDestroy(); // this method will split t1 and t2 asteroids and destory t3
 }

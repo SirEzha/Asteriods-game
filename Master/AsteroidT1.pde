@@ -25,7 +25,7 @@ class AsteroidT1 extends Asteroid {
     
   }
   
-  // splits into 2 t2
+  // splits into 2 t2 by removing itself and spawning two t2 asteroids
   void splitOrDestroy() {
     
   }
