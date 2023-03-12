@@ -3,11 +3,16 @@ class Bullet {
   // variables
   float posX;
   float posY;
-  float speedX;
-  float speedY;
+  final float SPEED_X = 5;
+  final float SPEED_Y = 5;
   
   // constants    
   final float SIZE = 5;
+  
+  Bullet(float posX, float posY) {
+    this.posX = posX;
+    this.posY = posY;
+  }
   
   // getters and setters
   void setPosX(float number) {
@@ -25,23 +30,16 @@ class Bullet {
   float getPosY() {
     return posY; 
   }
-  
-  void setSpeedX(float number) {
-    return; 
-  }
+
   
   // i dont really need this
   float getSpeedX() {
-    return speedX; 
-  }
-  
-  void setSpeedY(float number) {
-    return; 
+    return SPEED_X; 
   }
   
   // i dont really need this
   float getSpeedY() {
-    return speedY; 
+    return SPEED_Y; 
   }
   
   // methods
@@ -51,8 +49,8 @@ class Bullet {
   }
   
   void moveBullet() {
-    posX += speedX;
-    posY += speedY;
+    posX += SPEED_X;
+    posY += SPEED_Y;
   }
   
   void drawBullet() {

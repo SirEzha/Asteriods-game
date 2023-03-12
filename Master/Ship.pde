@@ -22,7 +22,7 @@ class Ship {
   // constants
   final float SIZE_X = 15;
   final float SIZE_Y = 30;
-  final int BULLET_ARRAY_LENTH = 10;
+  //final int BULLET_ARRAY_LENTH = 10;
   
   // lists
   ArrayList<Bullet> bullets = new ArrayList<Bullet>(); 
@@ -92,6 +92,9 @@ class Ship {
   void frame() {
     moveShip();
     drawShip();
+    for (int i = 0; i < bullets.size(); i++) {
+      bullets.get(i).frame();
+    }
   }
   
   void accelerateShip(char direction) {
@@ -123,7 +126,7 @@ class Ship {
   }
   
   void shoot() {
-    bullets.add(new Bullet());
+    bullets.add(new Bullet(posX, posY));
   }
   
   void collideAsteroid() {
