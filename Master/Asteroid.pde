@@ -6,13 +6,13 @@
 abstract class Asteroid {
   
   // variables
-  float posX;
-  float posY;
-  float speedX;
-  float speedY;
-  float mass;
-  float radius;
-  float multiplier;
+  float posX = width/2;
+  float posY = height/2;
+  float speedX = 0;
+  float speedY = 0;
+  float mass = 0;
+  float radius = 100;
+  float multiplier = 0.5;
   
   // getters and setters
   void setPosX(float number) {

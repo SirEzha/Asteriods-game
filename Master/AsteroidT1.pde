@@ -8,14 +8,14 @@ class AsteroidT1 extends Asteroid {
   float mass;
   
   // methods
-  void frame() {
-    move();
-  }
+  //void frame() {
+  //  move();
+  //}
   
-  void move() {
-    posX += speedX;
-    posY += speedY;
-  }
+  //void move() {
+  //  posX += speedX;
+  //  posY += speedY;
+  //}
   
   void collideAsteroid() {
     

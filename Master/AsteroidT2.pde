@@ -9,9 +9,6 @@ class AsteroidT2 extends Asteroid {
   float mass;
   
   // methods
-  void frame() {
-    
-  }
   
   void move() {
     
