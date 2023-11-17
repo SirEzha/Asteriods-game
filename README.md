@@ -1,5 +1,5 @@
 # Asteroids
-Classic asteroids game done in processing.
+Classic asteroids game done in processing / java.
 
 Feel free to use
 
